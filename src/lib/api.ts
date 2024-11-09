@@ -5,11 +5,11 @@ export async function generateAIResponse(data: {
   responseLength: number;
   language: string;
 }) {
-  const response = await fetch('YOUR_API_ENDPOINT', {
+  const response = await fetch('https://ai-response-generator.netlify.app/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer YOUR_API_KEY'
+      'Authorization': 'Bearer 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'
     },
     body: JSON.stringify(data)
   });
